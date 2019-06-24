@@ -2,4 +2,4 @@ language: c
 os: osx
 
 script:
-  - gcc -o test -O0 -mavx2 test.c && ./test
+  - gcc -o test -O3 -mavx2 test.c && ./test
