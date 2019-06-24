@@ -3,3 +3,7 @@ os: osx
 
 script:
   - gcc test.c -o test -mavx2 && ./test
+  - gcc test.c -o -O0 test -mavx2 && ./test
+  - gcc test.c -o -O1 test -mavx2 && ./test
+  - gcc test.c -o -O2 test -mavx2 && ./test
+  - gcc test.c -o -O3 test -mavx2 && ./test
