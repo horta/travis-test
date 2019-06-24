@@ -1,6 +1,5 @@
 language: c
 os: osx
 
-
 script:
-  - gcc test.c -o test -march=haswell && ./test
+  - gcc test.c -o test -mavx2 && ./test
