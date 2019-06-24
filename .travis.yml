@@ -3,4 +3,4 @@ os: osx
 
 
 script:
-  - gcc test.c -o test none && ./test
+  - gcc test.c -o test -march=haswell && ./test
